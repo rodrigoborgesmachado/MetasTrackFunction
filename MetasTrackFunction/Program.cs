@@ -15,7 +15,7 @@ public static class ScheduledFunction
         // Make an HTTP request to your API
         using (var httpClient = new HttpClient())
         {
-            var response = httpClient.GetAsync("https://your-api-endpoint").Result;
+            _ = httpClient.GetAsync("https://apisunsale.azurewebsites.net/api/Metas/RunProcess").Result;
             // Process the response if needed
         }
     }

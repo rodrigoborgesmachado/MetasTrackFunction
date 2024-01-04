@@ -8,7 +8,7 @@ public static class ScheduledFunction
 {
     [FunctionName("ScheduledFunction")]
     public static void Run(
-        [TimerTrigger("0 18 50 * * *")] TimerInfo myTimer,
+        [TimerTrigger("0 20 20 * * *")] TimerInfo myTimer,
         ILogger log)
     {
         Console.WriteLine("Calling process");
@@ -26,21 +26,6 @@ public static class ScheduledFunction
         catch (Exception ex)
         {
             Console.WriteLine("Error: " + ex.Message);
-        }
-    }
-
-    static async Task Main(string[] args)
-    {
-        var host = new HostBuilder()
-            .ConfigureWebJobs(builder =>
-            {
-                builder.AddTimers();
-            })
-            .Build();
-
-        using (host)
-        {
-            await host.RunAsync();
         }
     }
 }

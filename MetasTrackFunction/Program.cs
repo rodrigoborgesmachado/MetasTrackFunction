@@ -8,7 +8,7 @@ public static class ScheduledFunction
 {
     [FunctionName("ScheduledFunction")]
     public static void Run(
-        [TimerTrigger("0 0 1 * * *")] TimerInfo myTimer,
+        [TimerTrigger("0 1 0 * * *")] TimerInfo myTimer,
         ILogger log)
     {
         log.LogInformation($"C# Timer trigger function executed at: {DateTime.Now}");

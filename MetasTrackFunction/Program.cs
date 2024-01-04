@@ -11,13 +11,21 @@ public static class ScheduledFunction
         [TimerTrigger("0 1 0 * * *")] TimerInfo myTimer,
         ILogger log)
     {
-        log.LogInformation($"C# Timer trigger function executed at: {DateTime.Now}");
+        Console.WriteLine("Calling process");
 
-        // Make an HTTP request to your API
-        using (var httpClient = new HttpClient())
+        try
         {
-            _ = httpClient.GetAsync("https://apisunsale.azurewebsites.net/api/Metas/RunProcess").Result;
-            // Process the response if needed
+            log.LogInformation($"C# Timer trigger function executed at: {DateTime.Now}");
+            // Make an HTTP request to your API
+            using (var httpClient = new HttpClient())
+            {
+                _ = httpClient.GetAsync("https://apisunsale.azurewebsites.net/api/Metas/RunProcess").Result;
+                // Process the response if needed
+            }
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine("Error: " + ex.Message);
         }
     }
 

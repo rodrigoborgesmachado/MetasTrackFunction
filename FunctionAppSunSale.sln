@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetasTrackFunction", "MetasTrackFunction\MetasTrackFunction.csproj", "{96AB190D-FD86-4835-A589-006F394A1B7D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FunctionAppSunSale", "FunctionAppSunSale\FunctionAppSunSale.csproj", "{A91321F0-1C19-41B2-880E-300860083A9F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{96AB190D-FD86-4835-A589-006F394A1B7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{96AB190D-FD86-4835-A589-006F394A1B7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{96AB190D-FD86-4835-A589-006F394A1B7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{96AB190D-FD86-4835-A589-006F394A1B7D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A91321F0-1C19-41B2-880E-300860083A9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A91321F0-1C19-41B2-880E-300860083A9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A91321F0-1C19-41B2-880E-300860083A9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A91321F0-1C19-41B2-880E-300860083A9F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {5BAAB834-232E-4C53-9D46-85823B3FB773}
+		SolutionGuid = {A87B8D68-E1F2-4A4A-B146-904B50E9E6A5}
 	EndGlobalSection
 EndGlobal

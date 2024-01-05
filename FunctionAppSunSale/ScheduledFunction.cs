@@ -9,7 +9,7 @@ namespace FunctionAppSunSale
     {
         [FunctionName("ScheduledFunction")]
         public static void Run(
-        [TimerTrigger("0 45 13 * * *")] TimerInfo myTimer,
+        [TimerTrigger("0 0 12 * * *")] TimerInfo myTimer,
         ILogger log)
         {
             Console.WriteLine("Calling process");

@@ -14,6 +14,6 @@
       "name": "res"
     }
   ],
-  "scriptFile": "../bin/ScheduledFunction.dll",
+  "scriptFile": "ScheduledFunction.dll",
   "entryPoint": "ScheduledFunction.Run"
 }

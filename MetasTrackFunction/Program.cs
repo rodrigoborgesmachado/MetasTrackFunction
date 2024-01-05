@@ -8,7 +8,7 @@ public static class ScheduledFunction
 {
     [FunctionName("ScheduledFunction")]
     public static void Run(
-        [TimerTrigger("0 55 20 * * *")] TimerInfo myTimer,
+        [TimerTrigger("0 31 12 * * *")] TimerInfo myTimer,
         ILogger log)
     {
         Console.WriteLine("Calling process");
